@@ -1,8 +1,9 @@
 # git commands
 
-- [Switch between github accounts](./switch-between-github-accounts.md "Switch between github accounts")
-- [Push a new Git branch to a remote repo](#push-a-new-git-branch-to-a-remote-repo "Push a new Git branch to a remote repo")
-- [Turn off auto CRLF](./turn-off-autocrlf.md "Turn off auto CRLF")
+- [Switch between github accounts](./switch-between-github-accounts.md)
+- [Push a new Git branch to a remote repo](#push-a-new-git-branch-to-a-remote-repo)
+- [Undo local changes to a specific file](#undo-local-changes-to-a-specific-file)
+- [Turn off auto CRLF](./turn-off-autocrlf.md)
 
 ---
 
@@ -30,3 +31,13 @@
    Failure to perform the `--set-upstream` step will causes pushes of the new branch to the remote repo to fail with the following error:
 
    > fatal: The current branch has no upstream branch
+
+## Undo local changes to a specific file
+
+```
+git restore filename.txt
+
+or
+
+git checkout -- filename.txt
+```
