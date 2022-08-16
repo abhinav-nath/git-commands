@@ -1,11 +1,13 @@
 # git commands
 
-- [Switch between github accounts](./switch-between-github-accounts.md)
+- [Switch between GitHub accounts](./switch-between-github-accounts.md)
 - [Push a new Git branch to a remote repo](#push-a-new-git-branch-to-a-remote-repo)
 - [Undo local changes to a specific file](#undo-local-changes-to-a-specific-file)
+- [Git Log](#git-log)
 - [Turn off auto CRLF](./turn-off-autocrlf.md)
 
 ---
+
 
 ## Push a new Git branch to a remote repo
 
@@ -32,6 +34,7 @@
 
    > fatal: The current branch has no upstream branch
 
+
 ## Undo local changes to a specific file
 
 ```
@@ -40,4 +43,12 @@ git restore filename.txt
 or
 
 git checkout -- filename.txt
+```
+
+## Git Log
+
+```
+git log -2   # show last 2 commits
+
+git log -3   # show last 3 commits
 ```
