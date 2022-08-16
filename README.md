@@ -47,7 +47,7 @@ git checkout -- filename.txt
 
 ## Git Log
 
-```
+```shell
 git log -2   # show last 2 commits
 
 git log -3   # show last 3 commits
