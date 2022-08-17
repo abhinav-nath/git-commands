@@ -4,6 +4,7 @@
 - [Push a new Git branch to a remote repo](#push-a-new-git-branch-to-a-remote-repo)
 - [Undo local changes to a specific file](#undo-local-changes-to-a-specific-file)
 - [Git Log](#git-log)
+- [Create new branch in GitHub](#create-new-branch-in-github)
 - [Turn off auto CRLF](./turn-off-autocrlf.md)
 
 ---
@@ -52,3 +53,7 @@ git log -2   # show last 2 commits
 
 git log -3   # show last 3 commits
 ```
+
+## Create new branch in GitHub
+
+![image](https://user-images.githubusercontent.com/48696735/185187270-adbe7c0f-e93c-4d78-8913-dd82484900a6.png)
