@@ -5,6 +5,7 @@
 - [Undo local changes to a specific file](#undo-local-changes-to-a-specific-file)
 - [Git Log](#git-log)
 - [Create new branch in GitHub](#create-new-branch-in-github)
+- [Push empty commit](#push-empty-commit)
 - [Turn off auto CRLF](./turn-off-autocrlf.md)
 
 ---
@@ -57,3 +58,11 @@ git log -3   # show last 3 commits
 ## Create new branch in GitHub
 
 ![image](https://user-images.githubusercontent.com/48696735/185187270-adbe7c0f-e93c-4d78-8913-dd82484900a6.png)
+
+## Push empty commit
+
+```shell
+git commit --allow-empty -m "Empty-Commit"
+
+git push
+```
