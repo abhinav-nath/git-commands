@@ -95,3 +95,20 @@ Date:   Mon Mar 17 21:52:11 2008 -0700
 
     Change version number
 ```
+
+### Deleting Tags
+
+To delete a tag on your local repository, you can use `git tag -d <tagname>`. For example, we could remove our lightweight tag above as follows:
+
+```
+$ git tag -d v1.4-lw
+Deleted tag 'v1.4-lw' (was e7d5add)
+```
+
+Note that this does not remove the tag from any remote servers.
+
+delete a remote tag:
+
+```
+$ git push origin --delete <tagname>
+```
