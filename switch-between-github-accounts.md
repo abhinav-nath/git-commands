@@ -4,6 +4,10 @@
 1. Create separate ssh keys for personal and work accounts
 
    ```shell
+   ssh-keygen -t ed25519 -C "your_email@example.com"
+   ```
+
+   ```shell
    -rw-------  1 abhinavnath  staff  419 Aug 17 16:23 id_ed25519
    -rw-r--r--  1 abhinavnath  staff  111 Aug 17 16:23 id_ed25519.pub
    -rw-r--r--  1 abhinavnath  staff  802 Aug 17 18:50 known_hosts
