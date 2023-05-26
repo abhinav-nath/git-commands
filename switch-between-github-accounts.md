@@ -63,20 +63,33 @@
      ```
 
 
-4. Set git username and email
+4. Set git username and email for different accounts
 
-   - Check current git configuration
+   `.gitconfig`
 
-     ```shell
-     git config -l
-     ```
+   ```shell
+   # Note: Even though this will show up twice in `git config -l`, it will still be overridden based on the order of the includeIf lines below
+   [includeIf "gitdir/i:~/dev/personal/"]         # Personal
+     path = ~/.gitconfig-personal.inc
+   [includeIf "gitdir/i:~/dev/otheracc1/"]        # Other Account 1
+     path = ~/.gitconfig-otheracc1.inc
+   [includeIf "gitdir/i:~/dev/otheracc2/"]        # Other Account 2
+     path = ~/.gitconfig-otheracc2.inc
+   ```
 
-   - Update username and email
 
-     ```shell
-     git config user.name "Abhinav Nath"
-     git config user.email "personal@email.com"
+Check current git configuration
+
+```shell
+git config -l
+```
+
+Update username and email
+
+```shell
+git config user.name "Abhinav Nath"
+git config user.email "personal@email.com"
      
-     # To set globally
-     git config --global user.email "personal@email.com"
-     ```
+# To set globally
+git config --global user.email "personal@email.com"
+```
