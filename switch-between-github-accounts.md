@@ -65,7 +65,27 @@
 
 4. Set git username and email for different accounts
 
-   `.gitconfig`
+   Create different `.gitconfig-*.inc` files for different accounts
+   
+   **.gitconfig-personal.inc**
+   ```shell
+   # file location: ~/.gitconfig-personal.inc
+
+   [user]
+     name = Abhinav Nath
+     email = abhinavnath@ymail.com
+   ```
+   
+   **.gitconfig-otheracc1.inc**
+   ```shell
+   # file location: ~/.gitconfig-otheracc1.inc
+
+   [user]
+     name = Other User 1
+     email = otheracc1@xyz.com
+   ```
+
+   **.gitconfig**
 
    ```shell
    # Note: Even though this will show up twice in `git config -l`, it will still be overridden based on the order of the includeIf lines below
